@@ -1,3 +1,8 @@
+/*!
+ * \brief Spoustěcí soubor, který volá funkce
+ * \author Jaromír Šarf
+ * \author Matěj Hynek.
+ */
 #include <stdio.h>
 #include "param.h"
 #include "r_num.h"

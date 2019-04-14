@@ -1,5 +1,15 @@
+/*!
+ * \brief Hlavičkový soubor pro práci s argumenty
+ * \author Jaromír Šarf
+ * \author Matěj Hynek.
+ */
+
 #include "r_num.h"
 
+/*!
+ * \brief Funkce, která přepisu arabská čísla na římská
+ * \param num arabské číslo
+ */
 void replace_num(int num){
   switch(num){
     case 1:
@@ -26,6 +36,11 @@ void replace_num(int num){
   }
 }
 
+/*!
+ * \brief Porovnává čísla, která dělí na jejich součty a volá funkci pro nahrazení za římská čísla
+ * \param num arabské číslo
+ * \param i počet cifer čísla
+ */
 void switch_num(char num, unsigned i){
   switch(num){
     case '1':
@@ -71,6 +86,11 @@ void switch_num(char num, unsigned i){
   }
 }
 
+/*!
+ * \brief Pokud má číslo více než čtyři cifry, vypisuje počet M za počet tisíců na standardní výstup
+ * \param argv první argument spoustěcího souboru
+ * \param počet cifer cifer počtu tisíců
+ */
 void print_M(char* argv, unsigned i){
   unsigned num = 0;
   for(unsigned j = 0; j < i; j++){
