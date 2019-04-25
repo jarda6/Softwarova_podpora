@@ -30,9 +30,6 @@ void replace_num(int num){
     case 500:
       printf("D");
       break;
-    case 1000:
-      printf("M");
-      break;
   }
 }
 
@@ -106,11 +103,11 @@ void print_M(char* argv, unsigned i){
 
 void r_num_run(char* argv){
   system("@cls||clear");
-  printf("Puvodni cislo: %s\n", argv);
+  printf("Zadane cislo: %s\n", argv);
   printf("Rimske cislo: ");
   unsigned len = strlen(argv);
   unsigned i = 0;
-  if(len > 4){
+  if(len >= 4){
       print_M(argv, len - 3);
       i = len - 3;
     }
